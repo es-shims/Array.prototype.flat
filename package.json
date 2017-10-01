@@ -23,8 +23,7 @@
 		"tests-only": "es-shim-api --bound && npm run --silent test:shimmed && npm run --silent test:module",
 		"test:shimmed": "node test/shimmed",
 		"test:module": "node test",
-		"coverage": "covert test/*.js",
-		"coverage:quiet": "covert test/*.js --quiet",
+		"coverage": "nyc npm run tests-only",
 		"lint": "eslint test/*.js *.js",
 		"security": "nsp check"
 	},
@@ -55,6 +54,7 @@
 		"eslint": "^4.8.0",
 		"evalmd": "^0.0.17",
 		"nsp": "^2.8.1",
+		"nyc": "^10.3.2",
 		"tape": "^4.8.0"
 	},
 	"testling": {

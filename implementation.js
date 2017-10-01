@@ -9,6 +9,7 @@ var FlattenIntoArray = function FlattenIntoArray(target, original, source, sourc
 	var targetIndex = start;
 	var sourceIndex = 0;
 
+	/*
 	var mapperFunction;
 	if (arguments.length > 6) {
 		mapperFunction = arguments[6];
@@ -17,15 +18,18 @@ var FlattenIntoArray = function FlattenIntoArray(target, original, source, sourc
 	if (arguments.length > 7) {
 		thisArg = arguments[7];
 	}
+	*/
 
 	while (sourceIndex < sourceLen) {
 		var P = ES.ToString(sourceIndex);
 		var exists = ES.HasProperty(source, P);
 		if (exists) {
 			var element = ES.Get(source, P);
+			/*
 			if (typeof mapperFunction !== 'undefined') {
 				element = ES.Call(mapperFunction, thisArg, [element, sourceIndex, original]);
 			}
+			*/
 			var spreadable = ES.IsArray(element);
 			if (spreadable && depth > 0) {
 				var elementLen = ES.ToLength(ES.Get(element, 'length'));
