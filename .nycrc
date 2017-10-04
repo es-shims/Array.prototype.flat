@@ -2,8 +2,8 @@
 	"all": true,
 	"check-coverage": true,
 	"reporter": ["text-summary", "text", "html", "json"],
-	"lines": 95,
-	"statements": 95,
+	"lines": 96,
+	"statements": 96,
 	"functions": 80,
 	"branches": 87,
 	"exclude": [

@@ -17,6 +17,7 @@
 				"Get",
 				"HasProperty",
 				"IsArray",
+				"Set",
 				"ToInteger",
 				"ToLength",
 				"ToObject",

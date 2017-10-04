@@ -59,6 +59,7 @@ module.exports = function flatten() {
 	var sourceLen = ES.ToLength(ES.Get(O, 'length'));
 
 	var A = ES.ArraySpeciesCreate(O, 0);
-	FlattenIntoArray(A, O, O, sourceLen, 0, depthNum);
+	var lastIndex = FlattenIntoArray(A, O, O, sourceLen, 0, depthNum);
+	ES.Set(A, 'length', lastIndex + 1, true);
 	return A;
 };
