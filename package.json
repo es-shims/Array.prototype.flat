@@ -17,6 +17,7 @@
 	"license": "MIT",
 	"main": "./",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"pretest": "npm run --silent lint && evalmd README.md",
 		"test": "npm run --silent tests-only",
 		"posttest": "npm run --silent security",
@@ -55,6 +56,7 @@
 		"evalmd": "^0.0.17",
 		"nsp": "^2.8.1",
 		"nyc": "^10.3.2",
+		"safe-publish-latest": "^1.1.1",
 		"tape": "^4.8.0"
 	},
 	"testling": {
