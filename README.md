@@ -70,4 +70,3 @@ Simply clone the repo, `npm install`, and run `npm test`
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/array.prototype.flatten.svg
 [downloads-url]: http://npm-stat.com/charts.html?package=array.prototype.flatten
->>>>>>> 25a4a23... Add readme.
