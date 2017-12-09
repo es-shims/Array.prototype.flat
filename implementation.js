@@ -50,12 +50,12 @@ var FlattenIntoArray = function FlattenIntoArray(target, original, source, sourc
 
 module.exports = function flatten() {
 	var O = ES.ToObject(this);
+	var sourceLen = ES.ToLength(ES.Get(O, 'length'));
+
 	var depthNum = 1;
 	if (arguments.length > 0 && typeof arguments[0] !== 'undefined') {
 		depthNum = ES.ToInteger(arguments[0]);
 	}
-
-	var sourceLen = ES.ToLength(ES.Get(O, 'length'));
 
 	var A = ES.ArraySpeciesCreate(O, 0);
 	var nextIndex = FlattenIntoArray(A, O, O, sourceLen, 0, depthNum);
