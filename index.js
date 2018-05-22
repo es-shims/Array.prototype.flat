@@ -8,12 +8,12 @@ var getPolyfill = require('./polyfill');
 var polyfill = getPolyfill();
 var shim = require('./shim');
 
-var boundFlatten = bind.call(Function.call, polyfill);
+var boundFlat = bind.call(Function.call, polyfill);
 
-define(boundFlatten, {
+define(boundFlat, {
 	getPolyfill: getPolyfill,
 	implementation: implementation,
 	shim: shim
 });
 
-module.exports = boundFlatten;
+module.exports = boundFlat;

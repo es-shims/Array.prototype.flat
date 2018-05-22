@@ -1,5 +1,5 @@
 {
-	"name": "array.prototype.flatten",
+	"name": "array.prototype.flat",
 	"version": "1.2.1",
 	"author": {
 		"name": "Jordan Harband",
@@ -13,7 +13,7 @@
 			"url": "http://ljharb.codes"
 		}
 	],
-	"description": "An ESnext spec-compliant `Array.prototype.flatten` shim/polyfill/replacement that works as far down as ES3.",
+	"description": "An ESnext spec-compliant `Array.prototype.flat` shim/polyfill/replacement that works as far down as ES3.",
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
@@ -31,11 +31,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/es-shims/Array.prototype.flatten.git"
+		"url": "git://github.com/es-shims/Array.prototype.flat.git"
 	},
 	"keywords": [
 		"Array.prototype.flatten",
+		"Array.prototype.flat",
 		"flatten",
+		"flat",
 		"array",
 		"ESnext",
 		"shim",

@@ -3,12 +3,12 @@
 var define = require('define-properties');
 var getPolyfill = require('./polyfill');
 
-module.exports = function shimFlatten() {
+module.exports = function shimFlat() {
 	var polyfill = getPolyfill();
 	define(
 		Array.prototype,
-		{ flatten: polyfill },
-		{ flatten: function () { return Array.prototype.flatten !== polyfill; } }
+		{ flat: polyfill },
+		{ flat: function () { return Array.prototype.flat !== polyfill; } }
 	);
 	return polyfill;
 };

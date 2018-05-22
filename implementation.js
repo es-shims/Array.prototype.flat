@@ -50,7 +50,7 @@ var FlattenIntoArray = function FlattenIntoArray(target, source, sourceLen, star
 	return targetIndex;
 };
 
-module.exports = function flatten() {
+module.exports = function flat() {
 	var O = ES.ToObject(this);
 	var sourceLen = ES.ToLength(ES.Get(O, 'length'));
 
