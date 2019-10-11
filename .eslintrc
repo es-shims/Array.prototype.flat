@@ -8,6 +8,7 @@
 		"array-element-newline": 0,
 		"func-name-matching": 0,
 		"max-statements-per-line": [2, { "max": 2 }],
+		"multiline-comment-style": 0,
 		"new-cap": [2, {
 			"capIsNewExceptions": [
 				"ArraySpeciesCreate",
@@ -25,5 +26,15 @@
 			]
 		}],
 		"no-magic-numbers": 0,
-	}
+	},
+
+	"overrides": [
+		{
+			"files": "test/**",
+			"rules": {
+				"max-params": 0,
+				"no-invalid-this": [1],
+			},
+		},
+	],
 }
