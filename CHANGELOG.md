@@ -1,3 +1,11 @@
+1.2.2 / 2019-10-10
+=================
+  * [Deps] update `es-abstract`, `define-properties`
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `covert`, `evalmd`, `object-inspect`, `safe-publish-latest`, `tape`
+  * [meta] create FUNDING.yml
+  * [Tests] use `npx aud` instead of `nsp` or `npm audit` with hoops
+  * [Tests] up to `node` `v12.11`, `v11.15`, `v10.16`, `v9.11`, `v8.16`, `v6.17`, `v4.9`; use `nvm install-latest-npm`
+
 1.2.1 / 2018-02-23
 =================
   * [Fix] Temporarily hack main entry, so it's compatible with other resolvers (#3)
