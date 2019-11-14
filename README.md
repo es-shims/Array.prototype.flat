@@ -8,7 +8,7 @@
 
 [![npm badge][npm-badge-png]][package-url]
 
-An ESnext spec-compliant `Array.prototype.flat` shim/polyfill/replacement that works as far down as ES3.
+An ES2019 spec-compliant `Array.prototype.flat` shim/polyfill/replacement that works as far down as ES3.
 
 This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](https://tc39.github.io/proposal-flatMap/).
 
