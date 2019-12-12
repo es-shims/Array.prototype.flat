@@ -1,17 +1,22 @@
 'use strict';
 
-var ES = require('es-abstract/es2019');
+var ArraySpeciesCreate = require('es-abstract/2019/ArraySpeciesCreate');
+var FlattenIntoArray = require('es-abstract/2019/FlattenIntoArray');
+var Get = require('es-abstract/2019/Get');
+var ToInteger = require('es-abstract/2019/ToInteger');
+var ToLength = require('es-abstract/2019/ToLength');
+var ToObject = require('es-abstract/2019/ToObject');
 
 module.exports = function flat() {
-	var O = ES.ToObject(this);
-	var sourceLen = ES.ToLength(ES.Get(O, 'length'));
+	var O = ToObject(this);
+	var sourceLen = ToLength(Get(O, 'length'));
 
 	var depthNum = 1;
 	if (arguments.length > 0 && typeof arguments[0] !== 'undefined') {
-		depthNum = ES.ToInteger(arguments[0]);
+		depthNum = ToInteger(arguments[0]);
 	}
 
-	var A = ES.ArraySpeciesCreate(O, 0);
-	ES.FlattenIntoArray(A, O, sourceLen, 0, depthNum);
+	var A = ArraySpeciesCreate(O, 0);
+	FlattenIntoArray(A, O, sourceLen, 0, depthNum);
 	return A;
 };
