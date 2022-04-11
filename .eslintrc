@@ -17,8 +17,8 @@
 				"ToIntegerOrInfinity",
 				"ToLength",
 				"ToObject",
-				"ToString"
-			]
+				"ToString",
+			],
 		}],
 		"no-magic-numbers": 0,
 	},
